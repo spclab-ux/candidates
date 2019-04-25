@@ -55,7 +55,7 @@ gradient.addColorStop(0, '#9be15d');
 gradient.addColorStop(1, '#00e3ae');
 
 var data = {
-  labels: ['Técnico', 'User Experience', 'Psicologia do Usuário', 'Dados', 'Condução de Projetos', 'Desinibição Criativa'],
+  labels: ['Técnico', 'Visual', 'Pesquisa', 'Data Drive', 'Metódico', 'Disrruptivo'],
   datasets: [
     {
       label: 'Suas Habilidades',

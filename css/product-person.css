@@ -131,11 +131,16 @@ h1 {
 
 #notestitle {
   font-family: Merriweather,Georgia,serif;
-  font-size: 15px;
+  font-size: 11px;
 }
 
 #notes {
-  font-size: 15px;
+  font-size: 11px;
+  font-family: "Work Sans",sans-serif;
+}
+
+#tinynotes {
+  font-size: 8px;
   font-family: "Work Sans",sans-serif;
 }
 
