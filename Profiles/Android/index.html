@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Desenvolvedores Android</title>
+  <meta name="author" content="Christian Montoya">
+  <meta charset="utf-8">
+  <meta name="format-detection" content="telephone=no">
+  <meta name="HandheldFriendly" content="true">
+  <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, minimal-ui, target-densitydpi=device-dpi">
+
+  <!-- I LOVE SOCIAL MEDIA -->
+  <meta property="og:url" content="https://montoya.github.io/product-person/">
+  <meta property="og:title" content="Product Person">
+  <meta property="og:type" content="website">
+  <meta property="og:description" content="What type of product person are you? Well, what are you passionate about?">
+  <meta property="og:image" content="https://montoya.github.io/product-person/img/fb_share_600x315.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:site" content="@cm0nt0y4">
+  <meta name="twitter:title" content="Product Person">
+  <meta name="twitter:description" content="Que tipo de profissional você é? O que você gosta (profissionalmente)?">
+
+  <link href="https://fonts.googleapis.com/css?family=Merriweather|Work+Sans:300" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="css/spectre.min.css">
+  <link rel="stylesheet" type="text/css" href="css/product-person.css">
+</head>
+<body>
+
+  <div id="form">
+    <h1>Desenvolvedor Android</h1>
+    <p id="subtitle">Suas Habilidades</p>
+    <form>
+      <fieldset>
+        <legend>Escolha as suas áreas favoritas, nas quais "mais alto" = maior entusiasmo, distribuindo os 20 pontos nas seis categorias abaixo:</legend>
+        <div>
+          <input type="number" class="passion-value" min="1" max="8" name="technical" id="technical" value="0"> Programação
+        </div>
+        <div>
+          <input type="number" class="passion-value" min="1" max="8" name="user-experience" id="user-experience" value="0"> Java
+        </div>
+        <div>
+          <input type="number" class="passion-value" min="1" max="8" name="user-psychology" id="user-psychology" value="0"> Kotlin
+        </div>
+        <div>
+          <input type="number" class="passion-value" min="1" max="8" name="data" id="data" value="0"> CI/CD
+        </div>
+        <div>
+          <input type="number" class="passion-value" min="1" max="8" name="project-management" id="project-management" value="0"> GIT
+        </div>
+        <div>
+          <input type="number" class="passion-value" min="1" max="8" name="wackiness" id="wackiness" value="0"> Pesquisa
+        </div>
+      </fieldset>
+    </form>
+    <p id="form-helper">0 pontos restantes</p>
+  </div>
+
+  <div id="chart">
+    <div id="chart-content">
+      <canvas id="radar-chart" width="480" height="360"></canvas>
+      <div id="chart-controls">
+        <button id="download" class="btn btn-primary">Baixar</button>
+        <a id="tweet" class="btn btn-primary" href="https://twitter.com/intent/tweet?text=Discover%20your%20product%20person%20passions%20with%20this%20clever%20tool%3A&amp;url=https%3A%2F%2Fmontoya.github.io%2Fproduct-person%2F&amp;via=cm0nt0y4&amp;related=uriharamati" target="_blank">Tweet</a>
+      </div>
+    </div>
+  </div>
+
+  <div id="about">
+    <p id="notestitle">Legenda:</p>
+      <p id="notes"> Programação: Seu conhecimento sobre os tópicos de programação, como Orientação a Objetos, Complexidade Algorítmica, SOA, Design Paterns, etc .</p>
+      <p id="notes"> Java: Habilidades com a linguagem Java.</p>
+      <p id="notes"> Kotlin: Habilidades com a linguagem Kotlin.</p>
+      <p id="notes"> CI/CD: Sua experiência com tópicos envolvendo Continuous Integration e Continuous Delivery (Fastlane, Artifactory, Dagger, Jenkins, etc).</p>
+      <p id="notes"> GIT: Repositórios Git, como GitHub, Gitlab, Bitbucket, etc.
+      <p id="notes"> Pesquisa: Você é bom com pesquisa/estudo?.
+
+    <p id="tinynotes">Baseado em <a href="https://medium.com/swlh/what-you-should-be-looking-for-in-a-product-person-ee40e39a7301">&ldquo; O que procurar em um profissional de produtos&rdquo;</a> por <a href="https://twitter.com/uriharamati">Uri Haramati</a>.
+    Implementado por <a href="https://twitter.com/cm0nt0y4">Christian Montoya</a>. Referência: <a href="https://github.com/Montoya/product-person">GitHub</a>.</p>
+
+  </div>
+
+  <script type="text/javascript" src="js/gup.js"></script>
+  <script type="text/javascript" src="js/Blob.min.js"></script>
+  <script type="text/javascript" src="js/canvas-toBlob.min.js"></script>
+  <script type="text/javascript" src="js/FileSaver.min.js"></script>
+  <script type="text/javascript" src="js/Chart.bundle.min.js"></script>
+  <script type="text/javascript" src="js/product-person.js"></script>
+  <script type="text/javascript">
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-395928-18', 'auto');
+    ga('send', 'pageview');
+  </script>
+</body>
+</html>
