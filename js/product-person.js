@@ -59,7 +59,7 @@ var data = {
   datasets: [
     {
       label: 'Suas Habilidades',
-      data: [4, 4, 3, 3, 3, 3],
+      data: [0, 0, 0, 0, 0, 0],
       backgroundColor: gradient, /* "#c6dfb6", */
       borderColor: "rgba(0,0,0,0)",
       pointRadius: 0,
